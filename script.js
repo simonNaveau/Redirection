@@ -1,4 +1,3 @@
-$('.carousel.carousel-slider').carousel({
-    
-    indicators: true
+   $(document).ready(function(){
+    $('.slider').slider({interval: 10000});
   });

@@ -10,53 +10,41 @@
 	<title>Cerbere.tk</title>
 </head>
 
-<style type="text/css">
-	.carousel {
-		overflow: hidden;
-		position: relative;
-		/*margin-left: 10vw;
-		margin-right: 10vw;*/
-		width: 100%;
-		height: 80vh;
-		-webkit-perspective: 500px;
-		perspective: 500px;
-		-webkit-transform-style: preserve-3d;
-		transform-style: preserve-3d;
-		-webkit-transform-origin: 0% 50%;
-		transform-origin: 0% 50%;
-	}
-</style>
-
 <body bgcolor="#212121">
-	<nav style="margin-bottom: 2%">
-		<div class="nav-wrapper">
-			<a href="#" class="brand-logo center">Logo</a>
-			<ul id="nav-mobile" class="left hide-on-med-and-down">
-				<li><a href="sass.html">Sass</a></li>
-				<li><a href="badges.html">Components</a></li>
-				<li><a href="collapsible.html">JavaScript</a></li>
-			</ul>
-		</div>
-	</nav>
 
-	<div class="row">
-		<div class="col s1 m2 l1" style="margin-top: 35vh">
-				<i class="material-icons grey-text lighten-3-text" style="font-weight: bold; font-size: 15vh;">chevron_left</i>
-		</div>
-		<div class="col s10 m10 l10">
-			<div class="carousel carousel-slider">
-				<a class="carousel-item" href="#one!"><img class="responsive-img" src="https://lorempixel.com/800/400/food/1"></a>
-				<a class="carousel-item" href="./Torflix_app/index.html"><img style="height: 80vh;" src="./src/Torflix_picture.jpg"></a>
-				<div class="caption left-align">
-		          <h3>Left Aligned Caption</h3>
-		          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-		        </div>
-			</div>
-		</div>
-		<div class="col s1 m2 l1" style="margin-top: 35vh">
-				<i class="material-icons grey-text lighten-3-text" style="font-weight: bold; font-size: 15vh;">chevron_right</i>
-		</div>
-	</div>
+  <div class="slider fullscreen">
+    <ul class="slides">
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
+        <div class="caption center-align">
+          <h3 style="font-weight: bold">Bienvenue sur Cerbere.tk</h3>
+          <h5 class="light grey-text text-lighten-3">Faites défiler les applications pour découvrir mes créations</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+        <div class="caption left-align">
+          <h3>Left Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="./src/Torflix_picture.jpg"> <!-- random image -->
+        <div class="caption right-align">
+          <h3>Right Aligned Caption</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+      <li>
+        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
+        <div class="caption center-align">
+          <h3>This is our big Tagline!</h3>
+          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+        </div>
+      </li>
+    </ul>
+  </div>
+      
 	<script src="script.js"></script>
 
 
