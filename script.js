@@ -1,3 +1,3 @@
    $(document).ready(function(){
-    $('.slider').slider({interval: 10000});
+    $('.slider').slider({interval: 100000000});
   });

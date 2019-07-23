@@ -10,41 +10,48 @@
 	<title>Cerbere.tk</title>
 </head>
 
+<style type="text/css">
+@font-face {
+	font-family: test;
+	src: url("./src/Fonts/test.ttf");
+}
+.slider .indicators .indicator-item.active {
+    background-color: #d32f2f;
+}
+.slider .indicators .indicator-item {
+    background-color: #82b1ff;
+}
+</style>
+
 <body bgcolor="#212121">
 
-  <div class="slider fullscreen">
-    <ul class="slides">
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/1"> <!-- random image -->
-        <div class="caption center-align">
-          <h3 style="font-weight: bold">Bienvenue sur Cerbere.tk</h3>
-          <h5 class="light grey-text text-lighten-3">Faites défiler les applications pour découvrir mes créations</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-        <div class="caption left-align">
-          <h3>Left Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="./src/Torflix_picture.jpg"> <!-- random image -->
-        <div class="caption right-align">
-          <h3>Right Aligned Caption</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-      <li>
-        <img src="https://lorempixel.com/580/250/nature/4"> <!-- random image -->
-        <div class="caption center-align">
-          <h3>This is our big Tagline!</h3>
-          <h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
-        </div>
-      </li>
-    </ul>
-  </div>
-      
+	<div class="slider fullscreen">
+		<ul class="slides">
+			<li>
+				<img src="./src/mainSlide.jpg"> 
+					<div class="caption right-align " style="margin-top: 18%; font-family: 'test'; opacity: 0.5; float: right;">
+						<h3 style="color: #424242;font-weight: bold; opacity: 1; padding-right: 20px">Bienvenue sur Cerbere.tk</h3>
+						<h5 class="darken" style="opacity: 1;color: #424242;">Faites défiler les applications pour découvrir</h5>
+						<h5 class="darken" style="opacity: 1;color: #424242;">mes créations</h5>
+					</div>
+			</li>
+			<li>
+				<img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
+				<div class="caption left-align">
+					<h3>Weather App</h3>
+					<h5 class="light grey-text text-lighten-3">L'application qui vous informe sur la météo</h5>
+				</div>
+			</li>
+			<li>
+				<img src="./src/Torflix_picture.jpg"> <!-- random image -->
+				<div class="caption right-align">
+					<h3>Right Aligned Caption</h3>
+					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+				</div>
+			</li>
+		</ul>
+	</div>
+
 	<script src="script.js"></script>
 
 
