@@ -2,25 +2,41 @@
 <html>
 <head>
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
 	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
 	<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="icon" type="image/jpg" href="./src/logo.jpg" />
 	<title>Cerbere.tk</title>
 </head>
 
 <style type="text/css">
-@font-face {
-	font-family: test;
-	src: url("./src/Fonts/test.ttf");
-}
-.slider .indicators .indicator-item.active {
-    background-color: #d32f2f;
-}
-.slider .indicators .indicator-item {
-    background-color: #82b1ff;
-}
+	@font-face {
+		font-family: MainFont;
+		src: url("./src/Fonts/MainFont.ttf");
+	}
+	.slider .indicators .indicator-item.active {
+		background-color: #d32f2f;
+	}
+	.slider .indicators .indicator-item {
+		background-color: #82b1ff;
+	}
+	.btn-floating {
+		position: fixed;
+		right: 23px;
+		bottom: 23px;
+		padding-top: 15px;
+		margin-bottom: 0;
+	}
+	.tap-target-wave::before, .tap-target-wave::after {
+
+		background-color: #82b1ff;
+	}
+	.tap-target {
+    	background-color: #d32f2f;
+	}
 </style>
 
 <body bgcolor="#212121">
@@ -29,30 +45,41 @@
 		<ul class="slides">
 			<li>
 				<img src="./src/mainSlide.jpg"> 
-					<div class="caption right-align " style="margin-top: 18%; font-family: 'test'; opacity: 0.5; float: right;">
-						<h3 style="color: #424242;font-weight: bold; opacity: 1; padding-right: 20px">Bienvenue sur Cerbere.tk</h3>
-						<h5 class="darken" style="opacity: 1;color: #424242;">Faites défiler les applications pour découvrir</h5>
-						<h5 class="darken" style="opacity: 1;color: #424242;">mes créations</h5>
+				
+				<div class="caption right-align " style="top: 55%; font-family: 'MainFont';">
+					<h3 style="color: #424242; font-weight: bold;">Bienvenue sur Cerbere.tk</h3>
+					<h5 class="darken" style="color: #424242;">Faites défiler les applications pour découvrir</h5>
+					<h5 class="darken" style="color: #424242;">mes créations</h5>
+				</div>
+				<a id="menu" class="btn-floating btn-large red accent-4 pulse" style="font-weight: bold" onclick="openHelper()"><i class="material-icons">help_outline</i></a>
+				<div class="tap-target" data-target="menu">
+					<div class="tap-target-content" >
+						<h5 style="font-family: 'MainFont'; font-weight: bold; margin-left: 5%; margin-top: 5%">Comment naviguer ici ?</h5>
+						<p style="font-family: 'MainFont'; font-weight: bold;margin-left: 5%">Avec les points de couleur en bas de page, sélectionnez la page de l'application que vous souhaitez découvrir, cliquez sur le bouton GO en bas à droite et c'est parti.</p>
 					</div>
+				</div>
 			</li>
 			<li>
-				<img src="https://lorempixel.com/580/250/nature/2"> <!-- random image -->
-				<div class="caption left-align">
+				<img src="./src/WeatherSlide.jpg">
+				<div class="caption left-align" style="font-family: 'MainFont'; left: 4%;">
 					<h3>Weather App</h3>
 					<h5 class="light grey-text text-lighten-3">L'application qui vous informe sur la météo</h5>
 				</div>
+				<a class="btn-floating btn-large red accent-4 pulse" href="./Weather_app/index.html" style="font-weight: bold">GO</a>
 			</li>
-			<li>
-				<img src="./src/Torflix_picture.jpg"> <!-- random image -->
-				<div class="caption right-align">
-					<h3>Right Aligned Caption</h3>
-					<h5 class="light grey-text text-lighten-3">Here's our small slogan.</h5>
+			<li >
+				<img src="./src/TorflixSlide.jpg">
+				<div class="caption right-align"  style="font-family: 'MainFont'; left: 23%;">
+					<h3 style="color: #d50000 ; font-weight: bold;">Torflix version web</h3>
+					<h5 class="darken" style="color: #d50000 ;">Un moteur de recherche de film </h5>
+					<h5 class="darken" style="color: #d50000 ;">et plus encore...</h5>
 				</div>
+				<a class="btn-floating btn-large red accent-4 pulse" href="./Torflix_app/index.html" style="font-weight: bold">GO</a>
 			</li>
 		</ul>
 	</div>
 
-	<script src="script.js"></script>
+	<script src="./js/script.js"></script>
 
 
 </body>
